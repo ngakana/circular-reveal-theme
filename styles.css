@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 0.2rem 0.2rem 0; */
+    overflow: hidden;
+}
+
+.theme-layer, .theme-btn {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+.theme-layer {
+    transition: scale 900ms ease-out;
+    mix-blend-mode: difference;
+}
+
+.theme-btn {
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.wrapper {
+    background-color: #232533;
+    height: calc(100vh - 0.4rem);
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "chat songs"
+    "blank player";
+    grid-template-rows: 70px auto 80px;
+    grid-template-columns: 400px auto;
+    gap: 0.5rem;
+}
+
+.header {
+    grid-area: header;
+    color: #5d4c80;
+    border-bottom: 1px solid #5d4c80;
+}
+
+.chat{
+    grid-column: chat;
+    color: #5d4c80;
+    border-right: 1px solid #5d4c80;
+}
+
+.songs{
+    grid-column: songs;
+    color: #5d4c80;
+}
+
+.music-player{
+    grid-column: songs;
+    color: #5d4c80;
+    margin: 0.1rem;
+    border: 1px solid #5d4c80;
+}
