@@ -7,16 +7,15 @@
 }
 
 body {
-    /* padding: 0.2rem 0.2rem 0; */
     overflow: hidden;
 }
 
 .theme-layer, .theme-btn {
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: 2%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: antiquewhite;
 }
@@ -38,9 +37,9 @@ body {
     grid-template-areas:
     "header header"
     "chat songs"
-    "blank player";
+    "player player";
     grid-template-rows: 70px auto 80px;
-    grid-template-columns: 400px auto;
+    grid-template-columns: clamp(350px, 25%, 550px) auto;
     gap: 0.5rem;
 }
 
@@ -51,18 +50,21 @@ body {
 }
 
 .chat{
+    margin-left: 1rem;
     grid-column: chat;
     color: #5d4c80;
-    border-right: 1px solid #5d4c80;
+    border: 1px solid #5d4c80;
 }
 
 .songs{
+    margin-right: 1rem;
     grid-column: songs;
     color: #5d4c80;
+    border: 1px solid #5d4c80;
 }
 
 .music-player{
-    grid-column: songs;
+    grid-column: player;
     color: #5d4c80;
     margin: 0.1rem;
     border: 1px solid #5d4c80;
