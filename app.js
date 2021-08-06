@@ -16,6 +16,7 @@ const themify = (event) => {
     } else {
         
         themeLayer.style.scale = "500";
+        event.target.style.backgroundColor = "#232533";
 
         setTimeout( () => {
             for(let i=0; i < textElements.length; i++ ) {
