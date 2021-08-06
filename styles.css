@@ -7,16 +7,15 @@
 }
 
 body {
-    /* padding: 0.2rem 0.2rem 0; */
     overflow: hidden;
 }
 
 .theme-layer, .theme-btn {
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: 2%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: antiquewhite;
 }
